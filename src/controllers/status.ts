@@ -1,9 +1,5 @@
-import { RequestHandler } from 'express';
+import { controller } from '../utils/controller';
 
-export const getStatus: RequestHandler = (req, res, next) => {
-  try {
-    res.status(204).end();
-  } catch (err) {
-    next(err);
-  }
-};
+export const getStatus = controller(async (req, res) => {
+  res.status(204).end();
+});
