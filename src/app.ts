@@ -16,11 +16,6 @@ app.use(morgan('combined'));
 app.use(helmet());
 app.use(compression());
 
-app.use('/robots.txt', (req, res) =>
-  res.status(200).send('User-agent: *\nDisallow: /'),
-);
-app.use('/favicon.ico', (req, res) => res.status(404).end());
-
 const routes = readdirSync(join(__dirname, 'routes'));
 for (const route of routes) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
