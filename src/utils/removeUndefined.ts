@@ -1,7 +1,6 @@
-export const removeUndefined = <T extends Record<string, unknown>>(
+export const removeUndefined = <T extends Record<string, any>>(
   object: T,
-): T => {
-  return Object.fromEntries(
+): Partial<T> =>
+  Object.fromEntries(
     Object.entries(object).filter((entry) => entry[1] !== undefined),
-  ) as any;
-};
+  ) as Partial<T>;
