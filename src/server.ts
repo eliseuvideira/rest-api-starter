@@ -38,7 +38,7 @@ const onError = <T extends { syscall: string; code: string }>(err: T): void => {
 const onListening = (): void => {
   const addr = server.address();
   if (addr && typeof addr !== 'string') {
-    console.log(`Listening on port ${addr.port}`);
+    console.info(`Listening on port ${addr.port}`);
   }
 };
 
