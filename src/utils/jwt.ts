@@ -8,17 +8,9 @@ export const sign = async (token: Record<string, any>) =>
     ),
   );
 
-export const verify = async (token: string) =>
-  new Promise<string | Record<string, any>>((resolve, reject) => {
+export const decode = async (token: string) =>
+  new Promise<Record<string, any>>((resolve, reject) => {
     jwt.verify(token, JWT_SECRET, (err, data) =>
       err ? reject(new Error('Invalid token')) : resolve(data),
     );
   });
-
-export const decode = async (token: string) => {
-  const data = await verify(token);
-  if (!data || typeof data === 'string') {
-    throw new Error('Unauthorized');
-  }
-  return data;
-};
