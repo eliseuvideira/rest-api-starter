@@ -1,5 +1,8 @@
-export const removeKeys = <T>(obj: T, keys: (keyof T)[]): T => {
-  const newObj = { ...obj };
-  keys.forEach((key) => delete newObj[key]);
-  return newObj;
-};
+export const removeKeys = <T>(original: T, keys: (keyof T)[]): Partial<T> =>
+  Object.keys(original).reduce(
+    (copy, key) =>
+      keys.includes(key as keyof T)
+        ? copy
+        : { ...copy, [key]: original[key as keyof T] },
+    {},
+  );
