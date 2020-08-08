@@ -739,9 +739,9 @@
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
 "@types/superagent@*":
-  version "4.1.8"
-  resolved "https://registry.yarnpkg.com/@types/superagent/-/superagent-4.1.8.tgz#f663dcdd24705e07fce055003ace9b824f2a51c9"
-  integrity sha512-iol9KxQ7SLHatBJUiZ4uABrS4VS1frLjqPednxZz82eoCzo3Uy3TOH0p0ZIBbfBj8E/xqOtvizjBs9h7xi/l2g==
+  version "4.1.9"
+  resolved "https://registry.yarnpkg.com/@types/superagent/-/superagent-4.1.9.tgz#d899d3bc90b17eb298cac18b7aa22f7c3ec88c13"
+  integrity sha512-gpIC0p49YHT4VYDbdl0fKjOMWBurJFfYtKUIxOHzOwBtu5VT29FyldFI2vbmZ1K2iH2vS6MVcJZMjHM+652l4Q==
   dependencies:
     "@types/cookiejar" "*"
     "@types/node" "*"
@@ -1305,9 +1305,9 @@ char-regex@^1.0.2:
   integrity sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==
 
 chokidar@^3.4.0:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.1.tgz#e905bdecf10eaa0a0b1db0c664481cc4cbc22ba1"
-  integrity sha512-TQTJyr2stihpC4Sya9hs2Xh+O2wf+igjL36Y75xx2WdHuiICcn/XJza46Jwt0eT5hVpQOzo3FpY3cj3RVYLX0g==
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.4.2.tgz#38dc8e658dec3809741eb3ef7bb0a47fe424232d"
+  integrity sha512-IZHaDeBeI+sZJRX7lGcXsdzgvZqKv6sECqsbErJA4mHWfpRrD8B97kSFN4cQz6nGBGiuFia1MKR4d6c1o8Cv7A==
   dependencies:
     anymatch "~3.1.1"
     braces "~3.0.2"
@@ -3458,10 +3458,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-knex@^0.21.2:
-  version "0.21.2"
-  resolved "https://registry.yarnpkg.com/knex/-/knex-0.21.2.tgz#716e2f515aa55575eb812b4c7f58e532a3de6a12"
-  integrity sha512-hNp9f3yXCHtMrhV2pVsuCNYmPlgXhyqviMQGLBd9zdF03ZqCO9MPng0oYhNMgIs+vDr55VC6tjEbF1OQ1La7Kg==
+knex@^0.21.3:
+  version "0.21.3"
+  resolved "https://registry.yarnpkg.com/knex/-/knex-0.21.3.tgz#e9de972d290c96419ecaa792a0cd308aca9e4564"
+  integrity sha512-XENKsDdeKmn5yBENTRoik5AOlrxhjTUbDuML6iX7TtOtFHQ5rTfuUce7jk9UVKKmxgbzyA0wsSKWs6xfRgAwfA==
   dependencies:
     colorette "1.2.1"
     commander "^5.1.0"
