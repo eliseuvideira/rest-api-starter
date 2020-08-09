@@ -22,7 +22,7 @@ const config: ParserOptions = {
     '**/{docker-compose}.yml',
   ],
   excludeNodeModules: true,
-  verbose: true,
+  verbose: false,
   throwLevel: 'off',
 };
 
