@@ -6,6 +6,7 @@ const config: ParserOptions = {
   extension: ['.js', '.cjs', '.mjs', '.ts', '.tsx', '.jsx', '.yaml', '.yml'],
   include: ['**'],
   exclude: [
+    'docker-compose.yml',
     'coverage/**',
     'packages/*/test{,s}/**',
     '**/*.d.ts',
@@ -38,8 +39,6 @@ const baseInfo = {
   },
   servers: [{ name: 'localhost', url: `http://localhost:${process.env.PORT}` }],
 };
-
-console.log(baseInfo, spec);
 
 export const openapi = {
   ...spec,

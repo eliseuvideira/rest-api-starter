@@ -7,7 +7,7 @@ const router = Router();
  * GET /status
  * @tag Status
  * @response 204 - No body
- * @response default - Internal server error
+ * @response 500 - Internal server error
  */
 router.get('/status', getStatus);
 
