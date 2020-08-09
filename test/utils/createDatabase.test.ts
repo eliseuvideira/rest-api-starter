@@ -15,7 +15,6 @@ describe('createDatabase', () => {
   it('creates an knex database instance', () => {
     expect.assertions(6);
     const database = createDatabase({
-      client: 'pg',
       connection: {
         host: DB_HOST,
         port: DB_PORT,
