@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 import { JWT_SECRET } from './constants';
 
 export const sign = async (token: Record<string, any>) =>
-  new Promise((resolve, reject) =>
+  new Promise<string>((resolve, reject) =>
     jwt.sign(token, JWT_SECRET, (err, token) =>
       err ? reject(err) : resolve(token),
     ),
