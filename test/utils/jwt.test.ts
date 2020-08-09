@@ -18,4 +18,8 @@ describe('jwt', () => {
     expect(decoded).toBeDefined();
     expect(decoded.key).toEqual(object.key);
   });
+
+  it('throw errors on invalid input', async () => {
+    await expect(async () => decode('invalid token')).rejects.toThrow();
+  });
 });
