@@ -12,7 +12,7 @@ const app = express();
 
 app.use(cors());
 app.use(json());
-app.use(morgan('combined'));
+app.use(morgan('combined', { skip: () => process.env.NODE_ENV === 'test' }));
 app.use(helmet());
 app.use(compression());
 
