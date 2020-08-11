@@ -7,6 +7,8 @@ import { notFound, exception } from './middlewares/errors';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import compression from 'compression';
+import { serve, setup } from 'swagger-ui-express';
+import { openapi } from './utils/openapi';
 
 const app = express();
 
@@ -21,6 +23,8 @@ for (const route of routes) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
   app.use(require(join(__dirname, 'routes', route)).default);
 }
+
+app.use('/api-docs', serve, setup(openapi));
 
 app.use(notFound);
 app.use(exception);
