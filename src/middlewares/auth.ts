@@ -1,6 +1,7 @@
 import { RequestHandler } from 'express';
 import { HttpError } from '../utils/HttpError';
 import { decode } from '../utils/jwt';
+import { JWT_SECRET } from '../utils/constants';
 
 const TOKEN_PREFIX = 'Bearer ';
 const SLICE_LENGTH = TOKEN_PREFIX.length;
@@ -15,7 +16,7 @@ export const auth: RequestHandler = async (req, res, next) => {
     const token = auth.slice(SLICE_LENGTH);
 
     try {
-      req.token = await decode(token);
+      req.token = await decode(token, JWT_SECRET);
     } catch (err) {
       err.status = 401;
       throw err;
