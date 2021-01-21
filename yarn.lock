@@ -294,6 +294,23 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@ev-fns/endpoint@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@ev-fns/endpoint/-/endpoint-0.1.0.tgz#9ccff03a0821310db00ba84588bb9eb8f6d28a6c"
+  integrity sha512-ZGjmLfiOgLoahtNBlax8zyev/951uqe/uD56MsZwA64ud1SNViKeDu03c0YtDPYPvp+7CrhMRmG4iKrxiMLmEA==
+  dependencies:
+    express "^4.17.1"
+
+"@ev-fns/openapi@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@ev-fns/openapi/-/openapi-0.1.4.tgz#de065df7a2ecb8a6e48e588a2d82d0676b6a0c40"
+  integrity sha512-pRiWH8l1nMuuR26CFH7CehOnWzvy0SgddyeM3q39nO96nfxmXaRFh9tasVpF9+2/MK+wzM+ELcxir9hDKTBeDg==
+  dependencies:
+    app-root-path "^3.0.0"
+    express "^4.17.1"
+    openapi-comment-parser "^1.0.0"
+    swagger-ui-express "^4.1.6"
+
 "@hapi/hoek@^9.0.0":
   version "9.1.1"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.1.1.tgz#9daf5745156fd84b8e9889a2dc721f0c58e894aa"
@@ -776,14 +793,6 @@
   dependencies:
     "@types/superagent" "*"
 
-"@types/swagger-ui-express@^4.1.2":
-  version "4.1.2"
-  resolved "https://registry.yarnpkg.com/@types/swagger-ui-express/-/swagger-ui-express-4.1.2.tgz#cfc884904a104c3193f46f423d04ee0416be1ef4"
-  integrity sha512-t9teFTU8dKe69rX9EwL6OM2hbVquYdFM+sQ0REny4RalPlxAm+zyP04B12j4c7qEuDS6CnlwICywqWStPA3v4g==
-  dependencies:
-    "@types/express" "*"
-    "@types/serve-static" "*"
-
 "@types/yargs-parser@*":
   version "20.2.0"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-20.2.0.tgz#dd3e6699ba3237f0348cd085e4698780204842f9"
@@ -977,6 +986,11 @@ anymatch@^3.0.3, anymatch@~3.1.1:
   dependencies:
     normalize-path "^3.0.0"
     picomatch "^2.0.4"
+
+app-root-path@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/app-root-path/-/app-root-path-3.0.0.tgz#210b6f43873227e18a4b810a032283311555d5ad"
+  integrity sha512-qMcx+Gy2UZynHjOHOIXPNvpf+9cjvk3cWrBBK7zg4gH9+clobJRb9NGzcT7mQTcV/6Gm/1WelUtqxVXnNlrwcw==
 
 arg@^4.1.0:
   version "4.1.3"
