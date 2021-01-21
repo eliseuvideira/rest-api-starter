@@ -3,11 +3,11 @@ import cors from 'cors';
 import { json } from 'body-parser';
 import { readdirSync } from 'fs';
 import { join } from 'path';
-import { notFound, exception } from './middlewares/errors';
 import morgan from 'morgan';
 import helmet from 'helmet';
 import compression from 'compression';
 import openapi from '@ev-fns/openapi';
+import { notFound, exception } from '@ev-fns/errors';
 
 const app = express();
 

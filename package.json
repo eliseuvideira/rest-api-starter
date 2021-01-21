@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@ev-fns/endpoint": "^0.1.0",
+    "@ev-fns/errors": "^0.1.0",
     "@ev-fns/openapi": "^0.1.4",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
@@ -44,7 +45,6 @@
     "express": "^4.17.1",
     "helmet": "^4.4.1",
     "joi": "^17.3.0",
-    "jsonwebtoken": "^8.5.1",
     "knex": "^0.21.16",
     "moment": "^2.29.1",
     "morgan": "^1.10.0",
