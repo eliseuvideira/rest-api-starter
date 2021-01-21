@@ -1,5 +1,5 @@
 import { RequestHandler, ErrorRequestHandler } from 'express';
-import { HttpError, isHttpError } from '../utils/HttpError';
+import { HttpError, isHttpError } from '../functions/HttpError';
 
 const notFound: RequestHandler = (req, res, next) => {
   next(new HttpError(404, 'Resource not found'));

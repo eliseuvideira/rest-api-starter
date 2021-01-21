@@ -1,6 +1,6 @@
 import { ObjectSchema } from 'joi';
 import { RequestHandler } from 'express';
-import { HttpError } from '../utils/HttpError';
+import { HttpError } from '../functions/HttpError';
 
 const createRequestValidate = (key: 'body' | 'params' | 'query') => (
   schema: ObjectSchema,

@@ -8,7 +8,7 @@ import morgan from 'morgan';
 import helmet from 'helmet';
 import compression from 'compression';
 import { serve, setup } from 'swagger-ui-express';
-import { openapi } from './utils/openapi';
+import { openapi } from './functions/openapi';
 
 const app = express();
 

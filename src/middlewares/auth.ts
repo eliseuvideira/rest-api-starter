@@ -1,7 +1,7 @@
 import { RequestHandler } from 'express';
-import { HttpError } from '../utils/HttpError';
-import { decode } from '../utils/jwt';
-import { JWT_SECRET } from '../utils/constants';
+import { HttpError } from '../functions/HttpError';
+import { decode } from '../functions/jwt';
+import { JWT_SECRET } from '../functions/constants';
 
 const TOKEN_PREFIX = 'Bearer ';
 const SLICE_LENGTH = TOKEN_PREFIX.length;

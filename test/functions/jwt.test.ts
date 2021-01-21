@@ -2,7 +2,7 @@ import dotenv from 'dotenv-safe';
 
 dotenv.config();
 
-import { sign, decode } from '../../src/utils/jwt';
+import { sign, decode } from '../../src/functions/jwt';
 import { randomBytes } from 'crypto';
 
 describe('jwt', () => {

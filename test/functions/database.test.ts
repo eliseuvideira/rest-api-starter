@@ -2,14 +2,14 @@ import dotenv from 'dotenv-safe';
 
 dotenv.config();
 
-import { database } from '../../src/utils/database';
+import { database } from '../../src/functions/database';
 import {
   DB_HOST,
   DB_PORT,
   DB_USER,
   DB_PASSWORD,
   DB_DATABASE,
-} from '../../src/utils/constants';
+} from '../../src/functions/constants';
 
 describe('database', () => {
   it('uses the environment configuration', () => {

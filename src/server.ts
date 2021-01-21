@@ -11,7 +11,7 @@ console.info(`version ${version}`);
 
 import http from 'http';
 import app from './app';
-import { database } from './utils/database';
+import { database } from './functions/database';
 
 const port = process.env.PORT;
 app.set('port', port);

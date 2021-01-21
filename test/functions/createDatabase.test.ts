@@ -2,14 +2,14 @@ import dotenv from 'dotenv-safe';
 
 dotenv.config();
 
-import { createDatabase } from '../../src/utils/createDatabase';
+import { createDatabase } from '../../src/functions/createDatabase';
 import {
   DB_HOST,
   DB_PORT,
   DB_USER,
   DB_PASSWORD,
   DB_DATABASE,
-} from '../../src/utils/constants';
+} from '../../src/functions/constants';
 
 describe('createDatabase', () => {
   it('creates an knex database instance', () => {

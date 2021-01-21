@@ -1,4 +1,4 @@
-import { HttpError, isHttpError } from '../../src/utils/HttpError';
+import { HttpError, isHttpError } from '../../src/functions/HttpError';
 
 describe('HttpError', () => {
   it('is an instance of Error with status code key', () => {

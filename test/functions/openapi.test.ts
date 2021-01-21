@@ -2,7 +2,7 @@ import dotenv from 'dotenv-safe';
 
 dotenv.config();
 
-import { openapi } from '../../src/utils/openapi';
+import { openapi } from '../../src/functions/openapi';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const packageJson = require('../../package.json');

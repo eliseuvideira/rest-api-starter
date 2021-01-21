@@ -1,5 +1,5 @@
 import { notFound, exception } from '../../src/middlewares/errors';
-import { HttpError } from '../../src/utils/HttpError';
+import { HttpError } from '../../src/functions/HttpError';
 
 describe('errors', () => {
   describe('notFound', () => {

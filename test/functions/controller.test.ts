@@ -1,4 +1,4 @@
-import { controller } from '../../src/utils/controller';
+import { controller } from '../../src/functions/controller';
 
 describe('controller', () => {
   it('wraps an request handler and call next with error', async () => {
