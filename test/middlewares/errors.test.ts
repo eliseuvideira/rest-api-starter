@@ -26,7 +26,7 @@ describe('errors', () => {
             return this;
           },
           json: function (responseBody: any) {
-            expect(responseBody.error.message).toBe(error.message);
+            expect(responseBody.message).toBe(error.message);
           },
         } as any,
         null as any,
@@ -48,7 +48,7 @@ describe('errors', () => {
             return this;
           },
           json: function (responseBody: any) {
-            expect(responseBody.error.message).toBe(error.message);
+            expect(responseBody.message).toBe(error.message);
           },
         } as any,
         null as any,
@@ -74,8 +74,8 @@ describe('errors', () => {
             return this;
           },
           json: function (responseBody: any) {
-            expect(responseBody.error.message).not.toBe(error.message);
-            expect(responseBody.error.message).toBe('Internal server error');
+            expect(responseBody.message).not.toBe(error.message);
+            expect(responseBody.message).toBe('Internal server error');
           },
         } as any,
         null as any,
