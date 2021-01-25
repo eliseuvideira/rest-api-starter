@@ -294,10 +294,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@ev-fns/endpoint@^0.1.0":
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/@ev-fns/endpoint/-/endpoint-0.1.0.tgz#9ccff03a0821310db00ba84588bb9eb8f6d28a6c"
-  integrity sha512-ZGjmLfiOgLoahtNBlax8zyev/951uqe/uD56MsZwA64ud1SNViKeDu03c0YtDPYPvp+7CrhMRmG4iKrxiMLmEA==
+"@ev-fns/endpoint@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@ev-fns/endpoint/-/endpoint-0.1.1.tgz#ab73c7b7d7c27901f53eac68c083aa89508900c7"
+  integrity sha512-vMwlTOd3MnECPkyPt38/J/X0iXn3QwXMW/IP9S71mugZfQ1uxf09zei7C5mOHOsODhKgasdvvzuxr/fLXeJMaQ==
   dependencies:
     express "^4.17.1"
 
@@ -667,13 +667,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/helmet@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@types/helmet/-/helmet-4.0.0.tgz#af7af46de26abe368b85360769ae9938bfb2318a"
-  integrity sha512-ONIn/nSNQA57yRge3oaMQESef/6QhoeX7llWeDli0UZIfz8TQMkfNPTXA8VnnyeA1WUjG2pGqdjEIueYonMdfQ==
-  dependencies:
-    helmet "*"
-
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/@types/istanbul-lib-coverage/-/istanbul-lib-coverage-2.0.3.tgz#4ba8ddb720221f432e443bd5f9117fd22cfd4762"
@@ -700,13 +693,6 @@
   dependencies:
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
-
-"@types/joi@^17.2.3":
-  version "17.2.3"
-  resolved "https://registry.yarnpkg.com/@types/joi/-/joi-17.2.3.tgz#b7768ed9d84f1ebd393328b9f97c1cf3d2b94798"
-  integrity sha512-dGjs/lhrWOa+eO0HwgxCSnDm5eMGCsXuvLglMghJq32F6q5LyyNuXb41DHzrg501CKNOSSAHmfB7FDGeUnDmzw==
-  dependencies:
-    joi "*"
 
 "@types/json-schema@^7.0.3":
   version "7.0.7"
@@ -2573,7 +2559,7 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-helmet@*, helmet@^4.4.1:
+helmet@^4.4.1:
   version "4.4.1"
   resolved "https://registry.yarnpkg.com/helmet/-/helmet-4.4.1.tgz#a17e1444d81d7a83ddc6e6f9bc6e2055b994efe7"
   integrity sha512-G8tp0wUMI7i8wkMk2xLcEvESg5PiCitFMYgGRc/PwULB0RVhTP5GFdxOwvJwp9XVha8CuS8mnhmE8I/8dx/pbw==
@@ -3392,7 +3378,7 @@ jest@^26.6.3:
     import-local "^3.0.2"
     jest-cli "^26.6.3"
 
-joi@*, joi@^17.3.0:
+joi@^17.3.0:
   version "17.3.0"
   resolved "https://registry.yarnpkg.com/joi/-/joi-17.3.0.tgz#f1be4a6ce29bc1716665819ac361dfa139fff5d2"
   integrity sha512-Qh5gdU6niuYbUIUV5ejbsMiiFmBdw8Kcp8Buj2JntszCkCfxJ9Cz76OtHxOZMPXrt5810iDIXs+n1nNVoquHgg==
@@ -5191,10 +5177,10 @@ superagent@^6.1.0:
     readable-stream "^3.6.0"
     semver "^7.3.2"
 
-supertest@^6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/supertest/-/supertest-6.1.1.tgz#4fe6ddfdad4ef3eb72926046c6c625217771d9ae"
-  integrity sha512-3WDAWfqdNifCURjGUHZFv3u5nMg5tFtFRCTJOcSZXdlYZ0gqVF3UMhA7IJDP8nDXnR3gocbQ6s0bpiPnsoFeQw==
+supertest@^6.1.2:
+  version "6.1.2"
+  resolved "https://registry.yarnpkg.com/supertest/-/supertest-6.1.2.tgz#1679c234b139eed93911c185b67f689348fc2453"
+  integrity sha512-hZ8bu3TebxCYQ40mF6/2ou58EEG5jxo1AbsE1vprqXo3emkmqbQMcQrF7acsQteOjYlkExSvYOAQ/feTE9n7uA==
   dependencies:
     methods "^1.1.2"
     superagent "^6.1.0"
