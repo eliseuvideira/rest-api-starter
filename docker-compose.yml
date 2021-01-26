@@ -2,10 +2,7 @@ version: '3'
 
 services:
   api:
-    build:
-      context: .
-      args:
-        - PORT=$PORT
+    build: .
     environment:
       - NODE_ENV=production
       - PORT=$PORT
