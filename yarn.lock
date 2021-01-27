@@ -294,6 +294,14 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@ev-fns/dotenv@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@ev-fns/dotenv/-/dotenv-0.1.0.tgz#cf3a5c99dfdfa1c972d5d6e35c1cbc4ea5ab0792"
+  integrity sha512-OV0Ul2f/PHvXcOuhyixPsbdt9X03a8e+wtX3W7blkzj9+Xvtfnv1LwDHY0usAi1jqVEu2SSnWnW0GDOVSi6cfg==
+  dependencies:
+    dotenv "^8.2.0"
+    dotenv-safe "^8.2.0"
+
 "@ev-fns/endpoint@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@ev-fns/endpoint/-/endpoint-0.1.1.tgz#ab73c7b7d7c27901f53eac68c083aa89508900c7"
@@ -317,6 +325,13 @@
     express "^4.17.1"
     openapi-comment-parser "^1.0.0"
     swagger-ui-express "^4.1.6"
+
+"@ev-fns/server@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@ev-fns/server/-/server-0.1.0.tgz#41536edb65d6531655f023de702c3249fdf158a8"
+  integrity sha512-8kBRpaO2zEIWF+SpKm/xlGRb6jnjJlUGyzLDNEiaHNxKAZ4NdkmfjwbodJRZEHniIDzRr2oBm5BP4TIRa5I2pw==
+  dependencies:
+    express "^4.17.1"
 
 "@hapi/hoek@^9.0.0":
   version "9.1.1"

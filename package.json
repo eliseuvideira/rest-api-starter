@@ -32,9 +32,11 @@
     "typescript": "^4.1.3"
   },
   "dependencies": {
+    "@ev-fns/dotenv": "^0.1.0",
     "@ev-fns/endpoint": "^0.1.1",
     "@ev-fns/errors": "^0.1.0",
     "@ev-fns/openapi": "^0.1.4",
+    "@ev-fns/server": "^0.1.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
     "cors": "^2.8.5",
