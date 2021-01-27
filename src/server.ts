@@ -3,31 +3,25 @@ import dotenv from 'dotenv-safe';
 dotenv.config();
 
 console.info(`NODE_ENV is set to ${process.env.NODE_ENV}`);
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const { version } = require('../package.json');
-
-console.info(`version ${version}`);
+console.info(`version ${process.env.npm_package_version}`);
 
 import http from 'http';
 import app from './app';
 import { database } from './functions/database';
 
-const port = process.env.PORT;
-app.set('port', port);
-
 const server = http.createServer(app);
 
 const onError = <T extends { syscall: string; code: string }>(err: T): void => {
   if (err.syscall !== 'listen') {
-    throw err;
+    console.error(err);
+    process.exit(1);
   }
   switch (err.code) {
     case 'EACCES':
-      console.error(`Port ${port} requires elevated privileges`);
+      console.error(`Port ${process.env.PORT} requires elevated privileges`);
       break;
     case 'EADDRINUSE':
-      console.error(`Port ${port} is already in use`);
+      console.error(`Port ${process.env.PORT} is already in use`);
       break;
     default:
       console.error(err);
@@ -44,7 +38,7 @@ const onListening = (): void => {
 
 (async (): Promise<void> => {
   await database.raw('SELECT 1 AS server_status');
-  server.listen(port);
+  server.listen(process.env.PORT);
   server.on('error', onError);
   server.on('listening', onListening);
 })().catch((err) => {
