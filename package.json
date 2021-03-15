@@ -1,5 +1,5 @@
 {
-  "name": "rest-api",
+  "name": "nodejs-rest-api",
   "version": "0.1.0",
   "main": "index.js",
   "author": "Eliseu Videira <eliseuvideira1@gmail.com>",
