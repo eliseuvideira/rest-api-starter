@@ -1,6 +1,6 @@
 import dotenv from '@ev-fns/dotenv';
 
-dotenv();
+dotenv({}, dotenv.startup);
 
 import server from '@ev-fns/server';
 import app from './app';
