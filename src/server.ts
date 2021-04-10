@@ -6,16 +6,16 @@ import server from '@ev-fns/server';
 import app from './app';
 import { database } from './functions/database';
 
-server(
+server({
   app,
-  +(process.env.PORT || 0) || 3000,
-  async () => {
+  port: +(process.env.PORT || 0) || 3000,
+  before: async () => {
     await database.raw('SELECT 1 AS server_status');
   },
-  async () => {
+  after: async () => {
     console.info(`listening at http://localhost:${process.env.PORT}`);
   },
-).catch((err) => {
+}).catch((err) => {
   console.error(err);
   process.exit(1);
 });

@@ -351,10 +351,10 @@
     openapi-comment-parser "^1.0.0"
     swagger-ui-express "^4.1.6"
 
-"@ev-fns/server@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@ev-fns/server/-/server-0.1.3.tgz#3209774b1a5e8f2290691226557054b40f4538ff"
-  integrity sha512-ZGVD2/nVsx6KLXDLcQIZLNQc2njcQgbdJzH3u0MZ1kh4YHoZ9g8stz9fdsgM7stYyekBcIYho2B7xN4dAgIwlw==
+"@ev-fns/server@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@ev-fns/server/-/server-0.2.0.tgz#655e715e85036fd8a2a2d42b609f3bb3162880d6"
+  integrity sha512-4cHKY0yQB2ywPnHHI9a5/xtyvv/PCquQCGIIf9zR3fbicKbNBzlQVRBIft9u4YjPFquZ1uucd3xXivtdve9KnQ==
   dependencies:
     "@types/multer" "^1.4.5"
     express "^4.17.1"
