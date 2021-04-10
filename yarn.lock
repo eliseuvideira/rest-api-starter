@@ -341,10 +341,10 @@
   dependencies:
     express "^4.17.1"
 
-"@ev-fns/openapi@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@ev-fns/openapi/-/openapi-0.1.5.tgz#f104fcef487c1a2ca09132e5d577f62dec6fd0ae"
-  integrity sha512-5L24NGWPFfzdj3H9fsGbjn5FhbohWZPyt86Az/wilIRoF14df3AIvi9ENYaMXh4ziGamoddFjHjkELLteFr5yw==
+"@ev-fns/openapi@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@ev-fns/openapi/-/openapi-0.2.0.tgz#04b6ad4a442b00e96b9411cdf8624b9aa0d849d7"
+  integrity sha512-JHgpe/GJDjJEEOTXjYf5h8SaCZFeQhEmTDLV5zMI+HNsz6OSgfMrQy6eMAGEgq+hscMMwDsqACxKf4ZCQmgmDA==
   dependencies:
     app-root-path "^3.0.0"
     express "^4.17.1"

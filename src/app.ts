@@ -16,7 +16,7 @@ app.use(json());
 app.use(morgan('combined', { skip: () => process.env.NODE_ENV === 'test' }));
 app.use(helmet());
 app.use(compression());
-app.use(openapi());
+app.use(openapi({ apiName: process.env.API_NAME || '' }));
 
 const routes = readdirSync(join(__dirname, 'routes'));
 for (const route of routes) {

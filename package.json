@@ -32,7 +32,7 @@
     "@ev-fns/dotenv": "^0.2.2",
     "@ev-fns/endpoint": "^0.1.2",
     "@ev-fns/errors": "^0.1.1",
-    "@ev-fns/openapi": "^0.1.5",
+    "@ev-fns/openapi": "^0.2.0",
     "@ev-fns/server": "^0.2.0",
     "body-parser": "^1.19.0",
     "compression": "^1.7.4",
