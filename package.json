@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-rest-api",
+  "name": "rest-api-starter",
   "version": "0.1.0",
   "main": "index.js",
   "author": "Eliseu Videira <eliseuvideira1@gmail.com>",
@@ -40,18 +40,18 @@
     "express": "^4.17.1",
     "helmet": "^4.4.1",
     "husky": "4",
-    "knex": "^0.95.4",
     "moment": "^2.29.1",
-    "morgan": "^1.10.0",
-    "pg": "^8.5.1"
+    "morgan": "^1.10.0"
   },
   "scripts": {
     "build": "tsc",
+    "coverage": "jest --coverage",
     "dev": "ts-node-dev --no-notify src/server.ts",
     "format": "prettier --write 'src/**/*'",
     "lint": "eslint --max-warnings=0 'src/**/*'",
     "start": "node build/server.js",
-    "test": "jest"
+    "test": "jest",
+    "watch": "jest --watch"
   },
   "lint-staged": {
     "*.{js,ts}": [
