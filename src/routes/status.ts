@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getStatus } from "../endpoints/status";
+import { statusGet } from "../endpoints/status";
 
 const router = Router();
 
@@ -10,6 +10,6 @@ const router = Router();
  * @response default
  * @responseContent {Error} default.application/json
  */
-router.get("/status", getStatus);
+router.get("/status", statusGet);
 
 export default router;
