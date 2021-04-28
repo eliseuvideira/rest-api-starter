@@ -317,6 +317,15 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@ev-fns/auth@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@ev-fns/auth/-/auth-0.2.1.tgz#96f5ddc892ea8f92fb8097683cbaa5fbad95f614"
+  integrity sha512-TIw5OClcCfCsB8PvAWlfhksFalMchVXHvpgzmc37JtmeB078pKn/8VsDaOR2RUKgjD1IEEox4vLTtp0wbOXSZw==
+  dependencies:
+    "@ev-fns/endpoint" "^0.1.1"
+    "@ev-fns/errors" "^0.1.0"
+    express "^4.17.1"
+
 "@ev-fns/dotenv@^0.2.2":
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/@ev-fns/dotenv/-/dotenv-0.2.2.tgz#1f991cb2b2984eea736f83755c48e5c0b510043b"
@@ -326,14 +335,14 @@
     dotenv "^8.2.0"
     dotenv-safe "^8.2.0"
 
-"@ev-fns/endpoint@^0.1.2":
+"@ev-fns/endpoint@^0.1.1", "@ev-fns/endpoint@^0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@ev-fns/endpoint/-/endpoint-0.1.2.tgz#65b0e231453a744eeddc7b65e2eba08c607c0230"
   integrity sha512-phi2WR4BlT7ldo2yPDGqY0vURE6sAxJRfE0tmhEBEX/bkggplxv0h8sFP6K6nsSogfCk3iyM9YSGlzOpuUFd7w==
   dependencies:
     express "^4.17.1"
 
-"@ev-fns/errors@^0.1.1":
+"@ev-fns/errors@^0.1.0", "@ev-fns/errors@^0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@ev-fns/errors/-/errors-0.1.1.tgz#8f3cace52757524bacb5e44b63b97a2c3e3c995e"
   integrity sha512-2yQYBnhbK1mBwkeSplBOolBhXzOg2lcxLoB0N/m/bvkWRBN4inx7AkpYUVzOM/JjJY3uhrEr9cN3AHYejWQSwQ==
@@ -357,6 +366,27 @@
   dependencies:
     "@types/multer" "^1.4.5"
     express "^4.17.1"
+
+"@ev-fns/validation@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@ev-fns/validation/-/validation-0.1.2.tgz#85acfc4df9ed51c53b5022972cfe1e8ad5863ece"
+  integrity sha512-bhCsWGNz9rRX0E92S013v1dT9zpD8XtVSf82pBAzHMdx0ZbvnHCGbEm73VSn/qTHW+fQwliLxbCWQzMUlKpIOQ==
+  dependencies:
+    "@ev-fns/endpoint" "^0.1.2"
+    "@ev-fns/errors" "^0.1.1"
+    joi "^17.3.0"
+
+"@hapi/hoek@^9.0.0":
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.0.tgz#f3933a44e365864f4dad5db94158106d511e8131"
+  integrity sha512-sqKVVVOe5ivCaXDWivIJYVSaEgdQK9ul7a4Kity5Iw7u9+wBAPbX1RMSnLLmp7O4Vzj0WOWwMAJsTL00xwaNug==
+
+"@hapi/topo@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@hapi/topo/-/topo-5.0.0.tgz#c19af8577fa393a06e9c77b60995af959be721e7"
+  integrity sha512-tFJlT47db0kMqVm3H4nQYgn6Pwg10GTZHb1pwmSiv1K4ks6drQOtfEF5ZnPjkvC+y4/bUPHK+bc87QvLcL+WMw==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
 
 "@istanbuljs/load-nyc-config@^1.0.0":
   version "1.1.0"
@@ -565,6 +595,23 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
+
+"@sideway/address@^4.1.0":
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/@sideway/address/-/address-4.1.1.tgz#9e321e74310963fdf8eebfbee09c7bd69972de4d"
+  integrity sha512-+I5aaQr3m0OAmMr7RQ3fR9zx55sejEYR2BFJaxL+zT3VM2611X0SHvPWIbAUBZVTn/YzYKbV8gJ2oT/QELknfQ==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+
+"@sideway/formula@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@sideway/formula/-/formula-3.0.0.tgz#fe158aee32e6bd5de85044be615bc08478a0a13c"
+  integrity sha512-vHe7wZ4NOXVfkoRb8T5otiENVlT7a3IAiw7H5M2+GO+9CDgcVUUsX1zalAztCmwyOr2RUTGJdgB+ZvSVqmdHmg==
+
+"@sideway/pinpoint@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
+  integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.3"
@@ -2577,6 +2624,11 @@ human-signals@^1.1.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
+husky@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/husky/-/husky-6.0.0.tgz#810f11869adf51604c32ea577edbc377d7f9319e"
+  integrity sha512-SQS2gDTB7tBN486QSoKPKQItZw97BMOd+Kdb6ghfpBc0yXyzrddI0oDV5MkDAbuB4X2mO3/nj60TRMcYxwzZeQ==
+
 iconv-lite@0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
@@ -3282,6 +3334,17 @@ jest@^26.6.3:
     "@jest/core" "^26.6.3"
     import-local "^3.0.2"
     jest-cli "^26.6.3"
+
+joi@^17.3.0, joi@^17.4.0:
+  version "17.4.0"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-17.4.0.tgz#b5c2277c8519e016316e49ababd41a1908d9ef20"
+  integrity sha512-F4WiW2xaV6wc1jxete70Rw4V/VuMd6IN+a5ilZsxG4uYtUXWu2kq9W5P2dz30e7Gmw8RCbY/u/uk+dMPma9tAg==
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
+    "@hapi/topo" "^5.0.0"
+    "@sideway/address" "^4.1.0"
+    "@sideway/formula" "^3.0.0"
+    "@sideway/pinpoint" "^2.0.0"
 
 js-tokens@^4.0.0:
   version "4.0.0"

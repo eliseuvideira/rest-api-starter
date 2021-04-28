@@ -13,3 +13,43 @@ components:
           example: Internal server error
       required:
         - message
+
+    Book:
+      type: object
+      properties:
+        bookId:
+          type: integer
+          example: 1
+        title:
+          type: string
+          example: Moby-Dick
+        author:
+          type: string
+          example: Herman Melville
+      required:
+        - bookId
+        - title
+        - author
+
+    BookPostOne:
+      type: object
+      properties:
+        title:
+          type: string
+          example: Moby-Dick
+        author:
+          type: string
+          example: Herman Melville
+      required:
+        - title
+        - author
+
+    BookPatchOne:
+      type: object
+      properties:
+        title:
+          type: string
+          example: Moby-Dick
+        author:
+          type: string
+          example: Herman Melville
