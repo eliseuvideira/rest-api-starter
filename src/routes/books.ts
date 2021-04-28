@@ -7,6 +7,7 @@ import {
   booksPatchOne,
   booksPostOne,
 } from "../endpoints/books";
+import { auth } from "../middlewares/auth";
 import {
   booksGetOneParams,
   booksPatchOneBody,
@@ -35,7 +36,7 @@ router.get("/books", booksGetMany);
  * @response default
  * @responseContent {Error} default.application/json
  */
-router.post("/books", body(booksPostOneBody), booksPostOne);
+router.post("/books", auth, body(booksPostOneBody), booksPostOne);
 
 /**
  * GET /books/{bookId}
@@ -61,6 +62,7 @@ router.get("/books/:bookId", params(booksGetOneParams), booksGetOne);
  */
 router.patch(
   "/books/:bookId",
+  auth,
   params(booksGetOneParams),
   body(booksPatchOneBody),
   booksPatchOne,
@@ -75,6 +77,11 @@ router.patch(
  * @response default
  * @responseContent {Error} default.application/json
  */
-router.delete("/books/:bookId", params(booksGetOneParams), booksDeleteOne);
+router.delete(
+  "/books/:bookId",
+  auth,
+  params(booksGetOneParams),
+  booksDeleteOne,
+);
 
 export default router;
