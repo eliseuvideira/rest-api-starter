@@ -6,6 +6,7 @@ networks:
 services:
   api:
     build: .
+    image: $API_IMAGE
     environment:
       - NODE_ENV=production
       - PORT=$PORT
