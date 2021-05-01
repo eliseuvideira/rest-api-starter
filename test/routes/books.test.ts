@@ -92,7 +92,7 @@ describe("/books", () => {
       expect.assertions(1);
 
       const res = await request()
-        .get("/books/9999")
+        .patch("/books/9999")
         .set(AUTHORIZATION)
         .send({ title: "title1" });
 

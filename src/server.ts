@@ -8,7 +8,7 @@ dotenv({}, ({ NODE_ENV, npm_package_version }) => {
 import server from "@ev-fns/server";
 import app from "./app";
 
-const PORT = +(process.env.PORT || 0) || 3000;
+const PORT = +process.env.PORT || 3000;
 
 server({
   app,
