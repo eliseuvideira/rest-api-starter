@@ -1,8 +1,8 @@
 import dotenv from "@ev-fns/dotenv";
 
 dotenv({}, ({ NODE_ENV, npm_package_version }) => {
-  console.info(NODE_ENV);
-  console.info(npm_package_version);
+  console.info(`🌟 ${NODE_ENV}`);
+  console.info(`🔖 ${npm_package_version}`);
 });
 
 import server from "@ev-fns/server";
@@ -14,7 +14,7 @@ server({
   app,
   port: PORT,
   after: async () => {
-    console.info(`http://localhost:${PORT}`);
+    console.info(`🚀 http://localhost:${PORT}`);
   },
 }).catch((err) => {
   console.error(err);

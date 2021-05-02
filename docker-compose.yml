@@ -12,6 +12,7 @@ services:
       - PORT=$PORT
       - API_NAME=$API_NAME
       - API_TOKEN=$API_TOKEN
+      - API_IMAGE=$API_IMAGE
     logging:
       driver: json-file
       options:
