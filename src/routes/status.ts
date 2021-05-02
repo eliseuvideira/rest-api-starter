@@ -5,10 +5,10 @@ const router = Router();
 
 /**
  * GET /status
- * @tag Status
+ * @tag status
  * @response 204
  * @response default
- * @responseContent {Error} default.application/json
+ * @responseContent {error} default.application/json
  */
 router.get("/status", statusGet);
 

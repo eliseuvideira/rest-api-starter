@@ -1,11 +1,11 @@
 components:
   securitySchemes:
-    BearerAuth:
+    bearerAuth:
       type: http
       scheme: bearer
 
   schemas:
-    Error:
+    error:
       type: object
       properties:
         message:
@@ -14,7 +14,7 @@ components:
       required:
         - message
 
-    Book:
+    book:
       type: object
       properties:
         bookId:
@@ -31,7 +31,7 @@ components:
         - title
         - author
 
-    BookPostOne:
+    booksPostRequestBody:
       type: object
       properties:
         title:
@@ -44,7 +44,7 @@ components:
         - title
         - author
 
-    BookPatchOne:
+    booksPatchRequestBody:
       type: object
       properties:
         title:
