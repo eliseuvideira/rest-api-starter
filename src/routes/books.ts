@@ -18,47 +18,47 @@ const router = Router();
 
 /**
  * GET /books
- * @tag books
+ * @tag Books
  * @response 200
- * @responseContent {book[]} 200.application/json
+ * @responseContent {Book[]} 200.application/json
  * @response default
- * @responseContent {error} default.application/json
+ * @responseContent {Error} default.application/json
  */
 router.get("/books", booksGetMany);
 
 /**
  * POST /books
- * @tag books
- * @security bearerAuth
- * @bodyContent {booksPostRequestBody} application/json
+ * @tag Books
+ * @security BearerAuth
+ * @bodyContent {BookPostRequestBody} application/json
  * @response 201
- * @responseContent {book} 201.application/json
+ * @responseContent {Book} 201.application/json
  * @response default
- * @responseContent {error} default.application/json
+ * @responseContent {Error} default.application/json
  */
 router.post("/books", auth, body(booksPostOneBody), booksPostOne);
 
 /**
  * GET /books/{bookId}
- * @tag books
+ * @tag Books
  * @pathParam {integer} bookId
  * @response 200
- * @responseContent {book} 200.application/json
+ * @responseContent {Book} 200.application/json
  * @response default
- * @responseContent {error} default.application/json
+ * @responseContent {Error} default.application/json
  */
 router.get("/books/:bookId", params(booksGetOneParams), booksGetOne);
 
 /**
  * PATCH /books/{bookId}
- * @tag books
- * @security bearerAuth
+ * @tag Books
+ * @security BearerAuth
  * @pathParam {integer} bookId
- * @bodyContent {booksPatchRequestBody} application/json
+ * @bodyContent {BookPatchRequestBody} application/json
  * @response 200
- * @responseContent {book} 200.application/json
+ * @responseContent {Book} 200.application/json
  * @response default
- * @responseContent {error} default.application/json
+ * @responseContent {Error} default.application/json
  */
 router.patch(
   "/books/:bookId",
@@ -70,12 +70,12 @@ router.patch(
 
 /**
  * DELETE /books/{bookId}
- * @tag books
- * @security bearerAuth
+ * @tag Books
+ * @security BearerAuth
  * @pathParam {integer} bookId
  * @response 204
  * @response default
- * @responseContent {error} default.application/json
+ * @responseContent {Error} default.application/json
  */
 router.delete(
   "/books/:bookId",

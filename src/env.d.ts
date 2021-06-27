@@ -4,5 +4,6 @@ declare namespace NodeJS {
     PORT: string;
     API_NAME: string;
     API_TOKEN: string;
+    API_IMAGE: string;
   }
 }
