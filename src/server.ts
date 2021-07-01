@@ -1,9 +1,6 @@
-import dotenv from "@ev-fns/dotenv";
+import { dotenv } from "@ev-fns/dotenv";
 
-dotenv({}, ({ NODE_ENV, npm_package_version }) => {
-  console.info(`🌟 ${NODE_ENV}`);
-  console.info(`🔖 ${npm_package_version}`);
-});
+dotenv();
 
 import server from "@ev-fns/server";
 import app from "./app";

@@ -1,3 +1,3 @@
-import dotenv from "@ev-fns/dotenv";
+import { dotenv } from "@ev-fns/dotenv";
 
 dotenv();
