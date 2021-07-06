@@ -50,7 +50,7 @@
   "scripts": {
     "build": "tsc",
     "coverage": "jest --coverage && xdg-open ./coverage/lcov-report/index.html &>/dev/null",
-    "dev": "ts-node-dev --no-notify src/server.ts",
+    "dev": "ts-node-dev src/server.ts",
     "docker-build": "./.docker-build",
     "docker-push": "./.docker-push",
     "format": "prettier --write 'src/**/*'",
