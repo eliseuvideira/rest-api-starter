@@ -1,6 +1,6 @@
 {
   "name": "rest-api-starter",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "main": "index.js",
   "author": "Eliseu Videira <eliseuvideira1@gmail.com>",
   "license": "MIT",
