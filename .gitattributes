@@ -1,6 +1,5 @@
 .husky/pre-commit linguist-vendored
 .husky/pre-push linguist-vendored
-.docker-build linguist-vendored
-.docker-push linguist-vendored
+scripts/docker.js linguist-vendored
 .env.example linguist-vendored
 jest.config.js linguist-vendored
