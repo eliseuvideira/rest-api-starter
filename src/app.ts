@@ -9,6 +9,8 @@ import { notFound, exception } from "@ev-fns/errors";
 
 const app = express();
 
+app.set("trust proxy", ["loopback", "linklocal", "uniquelocal"]);
+
 app.use(cors());
 app.use(json());
 app.use(morgan("combined", { skip: () => process.env.NODE_ENV === "test" }));
