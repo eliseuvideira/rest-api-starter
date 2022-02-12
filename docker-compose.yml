@@ -6,7 +6,7 @@ networks:
 services:
   api:
     build: .
-    image: $API_IMAGE
+    image: $DOCKER_IMAGE
     env_file:
       - .env
     logging:

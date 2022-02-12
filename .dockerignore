@@ -2,8 +2,6 @@
 build/
 coverage/
 node_modules/
-scripts/
-test/
 .env
 *.error
 *.log
