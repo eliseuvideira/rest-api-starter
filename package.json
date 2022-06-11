@@ -51,6 +51,7 @@
     "docker": "./scripts/docker",
     "format": "prettier --write 'src/**/*'",
     "lint": "eslint --max-warnings=0 'src/**/*'",
+    "postbuild": "find build -iname \"*.js\" -exec yarn uglifyjs {} --rename --toplevel --comments '/^\\*/' --output {} \\;",
     "prebuild": "rm -rf build",
     "prepare": "husky install",
     "start": "node build/server.js",

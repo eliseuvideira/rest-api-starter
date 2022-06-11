@@ -22,8 +22,6 @@ COPY . .
 
 RUN yarn build
 
-RUN find /usr/src/app/build -iname "*.js" -exec yarn uglifyjs {} --rename --toplevel --output {} \;
-
 ## Server
 
 FROM node:alpine
