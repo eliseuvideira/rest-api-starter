@@ -38,6 +38,8 @@ COPY --from=build /usr/src/app/build /usr/src/app/build
 
 COPY --from=build /usr/src/app/.env.example /usr/src/app/.env.example
 
+COPY --from=build /usr/src/app/schemas.yml /usr/src/app/schemas.yml
+
 COPY --from=build /usr/src/app/LICENSE /usr/src/app/LICENSE
 
 RUN yarn install --production
