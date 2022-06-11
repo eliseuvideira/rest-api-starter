@@ -26,7 +26,8 @@
     "ts-jest": "^28.0.4",
     "ts-node": "^10.8.1",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^4.7.3"
+    "typescript": "^4.7.3",
+    "uglify-js": "^3.16.0"
   },
   "dependencies": {
     "@ev-fns/auth": "^1.0.1",
@@ -50,6 +51,7 @@
     "docker": "./scripts/docker",
     "format": "prettier --write 'src/**/*'",
     "lint": "eslint --max-warnings=0 'src/**/*'",
+    "prebuild": "rm -rf build",
     "prepare": "husky install",
     "start": "node build/server.js",
     "test": "jest",
