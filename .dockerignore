@@ -1,7 +1,7 @@
-.git/
 build/
 coverage/
 node_modules/
 .env
 *.error
 *.log
+.git/

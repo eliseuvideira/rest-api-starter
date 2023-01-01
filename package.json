@@ -47,7 +47,7 @@
   "scripts": {
     "build": "tsc",
     "coverage": "jest --coverage && xdg-open ./coverage/lcov-report/index.html &>/dev/null",
-    "dev": "ts-node-dev src/server.ts",
+    "dev": "ts-node-dev --watch '*.yml,*.ts,*.js,*.json' src/server.ts",
     "docker": "./scripts/docker",
     "format": "prettier --write 'src/**/*'",
     "lint": "eslint --max-warnings=0 'src/**/*'",
